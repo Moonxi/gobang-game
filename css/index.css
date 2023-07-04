@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gobang-container {
+  position: relative;
+  margin: 50px auto;
+  width: 520px;
+  height: 520px;
+  background-color: rgb(247, 230, 183);
+  border: 1px solid #aaa;
+  user-select: none;
+}
+.gobang-board {
+  outline: 2px solid #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 480px;
+  height: 480px;
+  transform: translate(-50%, -50%);
+}
+.gobang-black {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background-color: #000;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  text-indent: 999px;
+  /* box-shadow: 0px 0px 5px 3px red; */
+}
+.gobang-white {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+  overflow: hidden;
+  text-indent: 999px;
+  font-weight: bold;
+}
+.gobang-game {
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  width: 50px;
+  font-size: 16px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.gobang-next-game {
+  display: none;
+  position: absolute;
+  left: 70%;
+  top: -4%;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
